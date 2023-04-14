@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.snapolitano.exercises.generics.MapToPairsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-04-14T13:26:50" hostname="MBP-di-Saverio.station" time="0.01">
+  <properties/>
+  <testcase name="mapToPairs()" classname="com.snapolitano.exercises.generics.MapToPairsTest" time="0.01"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
