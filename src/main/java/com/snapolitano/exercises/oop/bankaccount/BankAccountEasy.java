@@ -1,10 +1,21 @@
 package com.snapolitano.exercises.oop.bankaccount;
-//TODO: Constructor, exceptions
+//TODO: exceptions
 public class BankAccountEasy extends AbstractBankAccount{
 
-    public BankAccountEasy(String IBAN, double balance) {
-        //TODO: IBAN & balance check
+    public BankAccountEasy(String IBAN, double balance, double interestRate, double operationFee) {
         super(IBAN, balance, 0, 0);
+    }
+
+    @Override
+    public double getBalance() {
+        return super.getBalance();
+    }
+
+    @Override
+    public void setBalance(double balance) {
+        if(balance>0){
+            super.setBalance(balance);
+        }
     }
 
     @Override

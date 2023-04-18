@@ -8,10 +8,12 @@ public abstract class AbstractBankAccount implements BankAccount{
     protected double operationFee;
 
     public AbstractBankAccount(String IBAN, double balance, double interestRate, double operationFee) {
-        this.IBAN = IBAN;
-        this.balance = balance;
-        this.interestRate = interestRate;
-        this.operationFee = operationFee;
+        if(IBAN.length()==27){
+            setIBAN(IBAN);
+            setBalance(balance);
+            setInterestRate(interestRate);
+            setOperationFee(operationFee);
+        }
     }
 
     @Override

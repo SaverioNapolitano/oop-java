@@ -7,7 +7,6 @@ public class BankAccountPro extends AbstractBankAccount{
     }
 
     @Override
-    //TODO: IBAN check
     public double transfer(BankAccount other, double amount) {
         other.setBalance(other.getBalance()+amount);
         this.setBalance(this.getBalance()-amount-this.getOperationFee());
