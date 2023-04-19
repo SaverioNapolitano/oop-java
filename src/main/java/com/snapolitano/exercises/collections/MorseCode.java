@@ -42,7 +42,7 @@ public class MorseCode {
         Map<Character, String> map = conversionTable();
         for(int i=0;i<string.length();i++){
             if(!map.containsKey(str.charAt(i))){
-                //TODO throw exception
+                throw new IllegalArgumentException();
             }
             stringBuilder.append(map.get(str.charAt(i)));
             stringBuilder.append(' ');

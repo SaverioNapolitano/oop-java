@@ -10,6 +10,6 @@ class MorseCodeTest {
     void morseCode() {
         assertEquals(".... . ._.. ._.. ___", MorseCode.morseCode("hello"));
         assertEquals(".__ ___ ._. ._.. _..", MorseCode.morseCode("world"));
-        //TODO assertThrows(,MorseCode.morseCode("w0rld"));
+        assertThrows(IllegalArgumentException.class, () -> MorseCode.morseCode("w0rld"));
     }
 }

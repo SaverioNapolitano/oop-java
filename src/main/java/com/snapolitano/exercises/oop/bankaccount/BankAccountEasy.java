@@ -1,8 +1,8 @@
 package com.snapolitano.exercises.oop.bankaccount;
-//TODO: exceptions
-public class BankAccountEasy extends AbstractBankAccount{
 
-    public BankAccountEasy(String IBAN, double balance, double interestRate, double operationFee) {
+public class BankAccountEasy extends AbstractBankAccount {
+
+    public BankAccountEasy(String IBAN, double balance) {
         super(IBAN, balance, 0, 0);
     }
 
@@ -13,30 +13,37 @@ public class BankAccountEasy extends AbstractBankAccount{
 
     @Override
     public void setBalance(double balance) {
-        if(balance>0){
+        if (balance >= 0) {
             super.setBalance(balance);
+        } else {
+            throw new IllegalArgumentException();
         }
     }
 
     @Override
     public double transfer(BankAccount other, double amount) {
-        if(other.getIBAN().substring(0,2).equals(this.getIBAN().substring(0,2)) && this.getBalance()-amount>0){
-            other.setBalance(other.getBalance()+amount);
-            this.setBalance(this.balance-amount);
+        if(!other.getIBAN().substring(0, 2).equals(this.getIBAN().substring(0, 2))){
+            throw new IllegalArgumentException();
+        }
+        if (this.getBalance() - amount >= 0) {
+            other.setBalance(other.getBalance() + amount);
+            this.setBalance(this.balance - amount);
             return amount;
         }
         double amountTransferred = this.getBalance();
-        other.setBalance(other.getBalance()+amountTransferred);
+        other.setBalance(other.getBalance() + amountTransferred);
         this.setBalance(0);
         return amountTransferred;
     }
 
     @Override
     public double withdraw(double amount) {
-        if(this.getBalance()-amount>=0){
-            this.setBalance(this.getBalance()-amount);
+        if (this.getBalance() - amount >= 0) {
+            this.setBalance(this.getBalance() - amount);
             return amount;
         }
-        return this.getBalance();
+        double balance = this.getBalance();
+        this.setBalance(0);
+        return balance;
     }
 }

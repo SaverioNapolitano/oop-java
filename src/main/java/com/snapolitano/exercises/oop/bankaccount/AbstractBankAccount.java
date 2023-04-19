@@ -1,6 +1,6 @@
 package com.snapolitano.exercises.oop.bankaccount;
 
-public abstract class AbstractBankAccount implements BankAccount{
+public abstract class AbstractBankAccount implements BankAccount {
 
     protected String IBAN;
     protected double balance;
@@ -8,22 +8,21 @@ public abstract class AbstractBankAccount implements BankAccount{
     protected double operationFee;
 
     public AbstractBankAccount(String IBAN, double balance, double interestRate, double operationFee) {
-        if(IBAN.length()==27){
+
             setIBAN(IBAN);
             setBalance(balance);
             setInterestRate(interestRate);
             setOperationFee(operationFee);
-        }
     }
 
     @Override
     public void addInterest() {
-        balance+=balance*interestRate;
+        balance += balance * interestRate;
     }
 
     @Override
     public void deposit(double amount) {
-balance+=amount;
+        balance += amount;
     }
 
     @Override

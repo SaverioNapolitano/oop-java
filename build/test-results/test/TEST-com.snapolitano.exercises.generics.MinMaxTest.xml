@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.snapolitano.exercises.generics.MinMaxTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-04-15T08:09:00" hostname="MBP-di-Saverio.station" time="0.01">
-  <properties/>
-  <testcase name="max()" classname="com.snapolitano.exercises.generics.MinMaxTest" time="0.009"/>
-  <testcase name="min()" classname="com.snapolitano.exercises.generics.MinMaxTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
