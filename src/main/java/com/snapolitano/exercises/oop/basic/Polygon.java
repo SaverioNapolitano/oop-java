@@ -26,7 +26,7 @@ public class Polygon {
     public double getArea() {
         double area = 0;
         for (int i = 0; i < vertices.length - 1; i++) {
-            area += vertices[i+1].x * vertices[i].y - vertices[i+1].y * vertices[i].x;
+            area += vertices[i + 1].x * vertices[i].y - vertices[i + 1].y * vertices[i].x;
         }
         return Math.abs(area) / 2;
     }

@@ -1,6 +1,7 @@
 package com.snapolitano.exercises.oop.basic;
 
 import java.util.Arrays;
+
 //TODO: remake (see javadoc)
 public class EnhancedResizableArray {
     int[] v;

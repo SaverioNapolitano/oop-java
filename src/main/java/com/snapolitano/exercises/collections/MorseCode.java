@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class MorseCode {
 
-    static Map<Character, String> conversionTable(){
+    static Map<Character, String> conversionTable() {
         Map<Character, String> map = new HashMap<>();
         map.put('a', "._");
         map.put('b', "_...");
@@ -36,17 +36,17 @@ public class MorseCode {
         return map;
     }
 
-    public static String morseCode(String string){
+    public static String morseCode(String string) {
         String str = string.toLowerCase();
         StringBuilder stringBuilder = new StringBuilder();
         Map<Character, String> map = conversionTable();
-        for(int i=0;i<string.length();i++){
-            if(!map.containsKey(str.charAt(i))){
+        for (int i = 0; i < string.length(); i++) {
+            if (!map.containsKey(str.charAt(i))) {
                 throw new IllegalArgumentException();
             }
             stringBuilder.append(map.get(str.charAt(i)));
             stringBuilder.append(' ');
         }
-        return stringBuilder.deleteCharAt(stringBuilder.length()-1).toString();
+        return stringBuilder.deleteCharAt(stringBuilder.length() - 1).toString();
     }
 }

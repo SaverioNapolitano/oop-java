@@ -2,7 +2,7 @@ package com.snapolitano.exercises.generics;
 
 import java.util.Objects;
 
-public class Pair<K,V> {
+public class Pair<K, V> {
     K first;
     V second;
 

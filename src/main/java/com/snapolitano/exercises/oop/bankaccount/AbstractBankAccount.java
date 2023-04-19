@@ -9,10 +9,10 @@ public abstract class AbstractBankAccount implements BankAccount {
 
     public AbstractBankAccount(String IBAN, double balance, double interestRate, double operationFee) {
 
-            setIBAN(IBAN);
-            setBalance(balance);
-            setInterestRate(interestRate);
-            setOperationFee(operationFee);
+        setIBAN(IBAN);
+        setBalance(balance);
+        setInterestRate(interestRate);
+        setOperationFee(operationFee);
     }
 
     @Override

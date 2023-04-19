@@ -5,6 +5,7 @@ import java.util.Objects;
 public class PairSameType<K> {
     K first;
     K second;
+
     public PairSameType(K first, K second) {
         this.first = first;
         this.second = second;
@@ -46,7 +47,7 @@ public class PairSameType<K> {
         return "PairSameType{" + "first=" + first + ", second=" + second + '}';
     }
 
-    void swap(){
+    void swap() {
         K newSecond = this.getFirst();
         this.setFirst(this.getSecond());
         this.setSecond(newSecond);

@@ -59,10 +59,14 @@ public interface PhoneBook {
             return "Person{" + "lastname='" + lastname + '\'' + ", name='" + name + '\'' + ", phone='" + phone + '\'' + '}';
         }
     }
+
     void addPerson(Person person);
+
     void removePerson(Person person);
 
     Person searchByLastname(String lastname);
+
     Person searchByName(String name);
+
     Person searchByNumber(String phone);
 }

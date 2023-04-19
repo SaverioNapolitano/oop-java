@@ -22,7 +22,7 @@ public class BankAccountEasy extends AbstractBankAccount {
 
     @Override
     public double transfer(BankAccount other, double amount) {
-        if(!other.getIBAN().substring(0, 2).equals(this.getIBAN().substring(0, 2))){
+        if (!other.getIBAN().substring(0, 2).equals(this.getIBAN().substring(0, 2))) {
             throw new IllegalArgumentException();
         }
         if (this.getBalance() - amount >= 0) {

@@ -7,16 +7,17 @@ public class Letter {
     String to;
     ArrayList<String> lines;
 
-    public Letter(String from, String to){
+    public Letter(String from, String to) {
         this.from = from;
         this.to = to;
         this.lines = new ArrayList<>();
     }
-    public void addLine(String line){
+
+    public void addLine(String line) {
         lines.add(line);
     }
 
-    public String getText(){
+    public String getText() {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("Dear ").append(to).append(":\n\n");
         for (String line : lines) {

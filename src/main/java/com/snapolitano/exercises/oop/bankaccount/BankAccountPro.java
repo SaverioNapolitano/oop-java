@@ -9,7 +9,7 @@ public class BankAccountPro extends AbstractBankAccount {
     @Override
     public void deposit(double amount) {
         super.deposit(amount);
-        this.setBalance(this.getBalance()-1);
+        this.setBalance(this.getBalance() - 1);
     }
 
     @Override

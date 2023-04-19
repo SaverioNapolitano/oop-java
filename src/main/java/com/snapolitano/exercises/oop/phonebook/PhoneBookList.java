@@ -1,8 +1,9 @@
 package com.snapolitano.exercises.oop.phonebook;
 
 import java.util.ArrayList;
+
 //TODO: use exceptions
-public class PhoneBookList implements PhoneBook{
+public class PhoneBookList implements PhoneBook {
 
     public static final int MAX_PERSONS = 256;
     ArrayList<Person> phoneBook;
@@ -13,10 +14,9 @@ public class PhoneBookList implements PhoneBook{
 
     @Override
     public void addPerson(Person person) {
-        if(phoneBook.size()<MAX_PERSONS){
+        if (phoneBook.size() < MAX_PERSONS) {
             phoneBook.add(person);
         }
-
     }
 
     @Override

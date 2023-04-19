@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.snapolitano.exercises.oop.bankaccount.BankAccountEasyTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-04-19T13:35:32" hostname="MacBook-Pro-di-Saverio.local" time="0.009">
-  <properties/>
-  <testcase name="transfer()" classname="com.snapolitano.exercises.oop.bankaccount.BankAccountEasyTest" time="0.009"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

@@ -5,7 +5,7 @@ public class Measure {
         double measure(T obj);
     }
 
-    public static <T> T max(T[] array, Measurer<T> measurer){
+    public static <T> T max(T[] array, Measurer<T> measurer) {
         T maxValue = array[0];
         for (T value : array) {
             if (measurer.measure(maxValue) < measurer.measure(value)) {
@@ -14,7 +14,8 @@ public class Measure {
         }
         return maxValue;
     }
-    public static <T> T min(T[] array, Measurer<T> measurer){
+
+    public static <T> T min(T[] array, Measurer<T> measurer) {
         T minValue = array[0];
         for (T value : array) {
             if (measurer.measure(minValue) > measurer.measure(value)) {

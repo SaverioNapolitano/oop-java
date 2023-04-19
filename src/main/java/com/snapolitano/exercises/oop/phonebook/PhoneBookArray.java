@@ -1,7 +1,7 @@
 package com.snapolitano.exercises.oop.phonebook;
 
 //TODO: use exceptions
-public class PhoneBookArray implements PhoneBook{
+public class PhoneBookArray implements PhoneBook {
     static final int MAX_PERSONS = 256;
     Person[] phoneBook;
 
@@ -11,9 +11,9 @@ public class PhoneBookArray implements PhoneBook{
 
     @Override
     public void addPerson(Person person) {
-        for(int i=0;i<MAX_PERSONS;i++){
-            if(phoneBook[i]==null){
-                phoneBook[i]=person;
+        for (int i = 0; i < MAX_PERSONS; i++) {
+            if (phoneBook[i] == null) {
+                phoneBook[i] = person;
                 break;
             }
         }
@@ -21,9 +21,9 @@ public class PhoneBookArray implements PhoneBook{
 
     @Override
     public void removePerson(Person person) {
-        for(int i=0;i< MAX_PERSONS;i++){
-            if(phoneBook[i].equals(person)){
-                phoneBook[i]=null;
+        for (int i = 0; i < MAX_PERSONS; i++) {
+            if (phoneBook[i].equals(person)) {
+                phoneBook[i] = null;
                 break;
             }
         }
@@ -52,7 +52,7 @@ public class PhoneBookArray implements PhoneBook{
     @Override
     public Person searchByNumber(String phone) {
         for (Person person : phoneBook) {
-            if (person!=null && person.getPhone().equals(phone)) {
+            if (person != null && person.getPhone().equals(phone)) {
                 return person;
             }
         }

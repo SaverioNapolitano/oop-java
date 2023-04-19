@@ -23,11 +23,11 @@ public class RationalNumber {
     public RationalNumber add(RationalNumber other) {
         int newNumerator1 = this.numerator * other.denominator;
         int newNumerator2 = this.denominator * other.numerator;
-        return new RationalNumber(newNumerator1+newNumerator2, this.denominator*other.denominator);
+        return new RationalNumber(newNumerator1 + newNumerator2, this.denominator * other.denominator);
     }
 
     public RationalNumber multiply(RationalNumber other) {
-        return new RationalNumber(this.numerator* other.numerator, this.denominator*other.denominator);
+        return new RationalNumber(this.numerator * other.numerator, this.denominator * other.denominator);
     }
 
     @Override
