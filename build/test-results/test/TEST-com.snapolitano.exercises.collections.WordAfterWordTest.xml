@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.snapolitano.exercises.collections.WordAfterWordTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-04-19T14:10:11" hostname="MBP-di-Saverio.station" time="0.393">
-  <properties/>
-  <testcase name="wordFrequency()" classname="com.snapolitano.exercises.collections.WordAfterWordTest" time="0.393"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
