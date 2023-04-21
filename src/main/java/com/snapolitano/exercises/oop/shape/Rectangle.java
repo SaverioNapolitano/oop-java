@@ -37,8 +37,8 @@ public class Rectangle extends AbstractShape {
     public double getArea() {
         Point bottomLeft = new Point(upperLeft.x, bottomRight.y);
         Point upperRight = new Point(bottomRight.x, upperLeft.y);
-        double a = Math.abs(upperLeft.getX() - upperRight.getY());
-        double b = Math.abs(upperLeft.getY() - bottomLeft.getY());
+        double a = Math.abs(getUpperLeft().getX() - upperRight.getY());
+        double b = Math.abs(getUpperLeft().getY() - bottomLeft.getY());
         return a * b;
     }
 
@@ -46,21 +46,21 @@ public class Rectangle extends AbstractShape {
     public double getPerimeter() {
         Point bottomLeft = new Point(upperLeft.x, bottomRight.y);
         Point upperRight = new Point(bottomRight.x, upperLeft.y);
-        double a = Math.abs(upperLeft.getX() - upperRight.getY());
-        double b = Math.abs(upperLeft.getY() - bottomLeft.getY());
+        double a = Math.abs(getUpperLeft().getX() - upperRight.getY());
+        double b = Math.abs(getUpperLeft().getY() - bottomLeft.getY());
         return 2 * (a + b);
     }
 
     @Override
     public void move(Point movement) {
-        upperLeft.setLocation(upperLeft.getX() + movement.getX(), upperLeft.getY() + movement.getY());
-        bottomRight.setLocation(bottomRight.getX() + movement.getX(), bottomRight.getY() + movement.getY());
+        getUpperLeft().setLocation(getUpperLeft().getX() + movement.getX(), getUpperLeft().getY() + movement.getY());
+        getBottomRight().setLocation(getBottomRight().getX() + movement.getX(),
+                getBottomRight().getY() + movement.getY());
     }
 
     @Override
     public void resize(double scale) {
-        //TODO: resize
-        upperLeft.setLocation(upperLeft.getX() * scale, upperLeft.getY() * scale);
-        bottomRight.setLocation(bottomRight.getX() * scale, bottomRight.getY() * scale);
+        getBottomRight().setLocation((getBottomRight().getX()-getUpperLeft().getX())*(scale-1)+getBottomRight().getX(),
+                (getBottomRight().getY()-getUpperLeft().getY())*(scale-1)+getBottomRight().getY());
     }
 }
