@@ -49,5 +49,4 @@ class RectangleTest {
         assertEquals(new Point(20, -10), rectangle.getBottomRight());
         assertEquals(new Point(0, 10), rectangle.getUpperLeft());
     }
-
 }

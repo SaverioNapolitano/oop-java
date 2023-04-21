@@ -47,7 +47,5 @@ class CircleTest {
     void resize() {
         circle.resize(2);
         assertEquals(20, circle.getRadius());
-
     }
-
 }

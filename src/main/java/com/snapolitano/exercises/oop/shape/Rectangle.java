@@ -54,13 +54,11 @@ public class Rectangle extends AbstractShape {
     @Override
     public void move(Point movement) {
         getUpperLeft().setLocation(getUpperLeft().getX() + movement.getX(), getUpperLeft().getY() + movement.getY());
-        getBottomRight().setLocation(getBottomRight().getX() + movement.getX(),
-                getBottomRight().getY() + movement.getY());
+        getBottomRight().setLocation(getBottomRight().getX() + movement.getX(), getBottomRight().getY() + movement.getY());
     }
 
     @Override
     public void resize(double scale) {
-        getBottomRight().setLocation((getBottomRight().getX()-getUpperLeft().getX())*(scale-1)+getBottomRight().getX(),
-                (getBottomRight().getY()-getUpperLeft().getY())*(scale-1)+getBottomRight().getY());
+        getBottomRight().setLocation((getBottomRight().getX() - getUpperLeft().getX()) * (scale - 1) + getBottomRight().getX(), (getBottomRight().getY() - getUpperLeft().getY()) * (scale - 1) + getBottomRight().getY());
     }
 }

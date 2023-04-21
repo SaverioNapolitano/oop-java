@@ -11,7 +11,7 @@ class IterableToStringTest {
 
     @Test
     void iterableToString() {
-        assertEquals("1, 2, 3, ", IterableToString.iterableToString(new ArrayList<>(List.of(1,2,3))));
-        assertEquals("a, b, c, ", IterableToString.iterableToString(new ArrayList<>(List.of("a","b","c"))));
+        assertEquals("1, 2, 3, ", IterableToString.iterableToString(new ArrayList<>(List.of(1, 2, 3))));
+        assertEquals("a, b, c, ", IterableToString.iterableToString(new ArrayList<>(List.of("a", "b", "c"))));
     }
 }

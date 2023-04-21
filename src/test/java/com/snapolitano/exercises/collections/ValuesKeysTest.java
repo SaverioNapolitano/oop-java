@@ -11,9 +11,7 @@ class ValuesKeysTest {
 
     @Test
     void valuesKeys() {
-        assertTrue(ValuesKeys.valuesKeys(new HashMap<>(Map.of("a", "hello", "b", "how", "c", "are",
-                "are", "saverio"))));
-        assertFalse(ValuesKeys.valuesKeys(new HashMap<>(Map.of("a", "hello", "b", "how", "c", "are",
-                "you", "saverio"))));
+        assertTrue(ValuesKeys.valuesKeys(new HashMap<>(Map.of("a", "hello", "b", "how", "c", "are", "are", "saverio"))));
+        assertFalse(ValuesKeys.valuesKeys(new HashMap<>(Map.of("a", "hello", "b", "how", "c", "are", "you", "saverio"))));
     }
 }

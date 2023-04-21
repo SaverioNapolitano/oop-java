@@ -16,6 +16,7 @@ class SortAccountTest {
     SortAccount.Account account2 = new SortAccount.Account(1500, 10, LocalDateTime.of(2023, 3, 24, 15, 10));
 
     List<SortAccount.Account> accountList = new ArrayList<>(List.of(account, account1, account2));
+
     @Test
     void sortByAmount() {
         SortAccount.sortByAmount(accountList);

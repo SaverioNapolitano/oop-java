@@ -8,8 +8,8 @@ class DivideTest {
 
     @Test
     void divide() {
-        assertEquals(2.0, Divide.divide(4,2));
-        assertEquals(2.0, Divide.divide(4.0,2));
-        assertEquals(2.0, Divide.divide(4,2.0));
+        assertEquals(2.0, Divide.divide(4, 2));
+        assertEquals(2.0, Divide.divide(4.0, 2));
+        assertEquals(2.0, Divide.divide(4, 2.0));
     }
 }

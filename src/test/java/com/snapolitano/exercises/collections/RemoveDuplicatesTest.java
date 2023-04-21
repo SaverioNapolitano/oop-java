@@ -12,7 +12,6 @@ class RemoveDuplicatesTest {
     @Test
     void removeDuplicates() {
         assertEquals(new ArrayList<>(List.of(1, 2, 3, 4, 5)), RemoveDuplicates.removeDuplicates(new ArrayList<>(List.of(1, 2, 3, 4, 5))));
-        assertEquals(new ArrayList<>(List.of(1, 2)), RemoveDuplicates.removeDuplicates(new ArrayList<>(List.of(1, 1,
-                1, 2, 2))));
+        assertEquals(new ArrayList<>(List.of(1, 2)), RemoveDuplicates.removeDuplicates(new ArrayList<>(List.of(1, 1, 1, 2, 2))));
     }
 }

@@ -5,11 +5,11 @@ import java.util.Iterator;
 import java.util.Set;
 
 public class Intersection {
-    public static Set<Integer> intersection(Set<Integer> first, Set<Integer> second){
+    public static Set<Integer> intersection(Set<Integer> first, Set<Integer> second) {
         Set<Integer> integerSet = new HashSet<>();
-        for(Iterator<Integer> i=first.iterator();i.hasNext();){
+        for (Iterator<Integer> i = first.iterator(); i.hasNext(); ) {
             Integer integer = i.next();
-            if(second.contains(integer)){
+            if (second.contains(integer)) {
                 integerSet.add(integer);
             }
         }

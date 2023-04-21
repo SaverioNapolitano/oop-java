@@ -11,9 +11,7 @@ class IntersectionTest {
 
     @Test
     void intersection() {
-        assertEquals(new HashSet<>(), Intersection.intersection(new HashSet<Integer>(Set.of(1,2,3)),
-                new HashSet<Integer>(Set.of(4,5,6))));
-        assertEquals(new HashSet<>(Set.of(3)), Intersection.intersection(new HashSet<Integer>(Set.of(1,2,3)),
-                new HashSet<Integer>(Set.of(3,4,5))));
+        assertEquals(new HashSet<>(), Intersection.intersection(new HashSet<Integer>(Set.of(1, 2, 3)), new HashSet<Integer>(Set.of(4, 5, 6))));
+        assertEquals(new HashSet<>(Set.of(3)), Intersection.intersection(new HashSet<Integer>(Set.of(1, 2, 3)), new HashSet<Integer>(Set.of(3, 4, 5))));
     }
 }

@@ -15,5 +15,4 @@ class PairTest {
         assertEquals(10, p2.getFirst());
         assertEquals(20, p2.getSecond());
     }
-
 }
