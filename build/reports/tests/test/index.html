@@ -20,13 +20,13 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">1</div>
+<div class="counter">118</div>
 <p>tests</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">0</div>
+<div class="counter">3</div>
 <p>failures</p>
 </div>
 </td>
@@ -38,7 +38,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.008s</div>
+<div class="counter">0.430s</div>
 <p>duration</p>
 </div>
 </td>
@@ -47,8 +47,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox success" id="successRate">
-<div class="percent">100%</div>
+<div class="infoBox failures" id="successRate">
+<div class="percent">97%</div>
 <p>successful</p>
 </div>
 </td>
@@ -58,13 +58,33 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Packages</a>
+<a href="#tab0">Failed tests</a>
 </li>
 <li>
-<a href="#tab1">Classes</a>
+<a href="#tab1">Packages</a>
+</li>
+<li>
+<a href="#tab2">Classes</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<ul class="linkList">
+<li>
+<a href="classes/com.snapolitano.exercises.collections.SpeedTestTest.html">SpeedTestTest</a>.
+<a href="classes/com.snapolitano.exercises.collections.SpeedTestTest.html#insertEnd()">insertEnd()</a>
+</li>
+<li>
+<a href="classes/com.snapolitano.exercises.oop.shape.CircleTest.html">CircleTest</a>.
+<a href="classes/com.snapolitano.exercises.oop.shape.CircleTest.html#setColor()">setColor()</a>
+</li>
+<li>
+<a href="classes/com.snapolitano.exercises.oop.shape.RectangleTest.html">RectangleTest</a>.
+<a href="classes/com.snapolitano.exercises.oop.shape.RectangleTest.html#setColor()">setColor()</a>
+</li>
+</ul>
+</div>
+<div id="tab1" class="tab">
 <h2>Packages</h2>
 <table>
 <thead>
@@ -80,18 +100,98 @@
 <tbody>
 <tr>
 <td class="success">
-<a href="packages/com.snapolitano.exercises.oop.shape.html">com.snapolitano.exercises.oop.shape</a>
+<a href="packages/com.snapolitano.exercises.arrays.html">com.snapolitano.exercises.arrays</a>
 </td>
+<td>17</td>
+<td>0</td>
+<td>0</td>
+<td>0.018s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="failures">
+<a href="packages/com.snapolitano.exercises.collections.html">com.snapolitano.exercises.collections</a>
+</td>
+<td>15</td>
 <td>1</td>
 <td>0</td>
+<td>0.381s</td>
+<td class="failures">93%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="packages/com.snapolitano.exercises.functional.html">com.snapolitano.exercises.functional</a>
+</td>
+<td>10</td>
 <td>0</td>
-<td>0.008s</td>
+<td>0</td>
+<td>0.011s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="packages/com.snapolitano.exercises.generics.html">com.snapolitano.exercises.generics</a>
+</td>
+<td>13</td>
+<td>0</td>
+<td>0</td>
+<td>0.003s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="packages/com.snapolitano.exercises.oop.bankaccount.html">com.snapolitano.exercises.oop.bankaccount</a>
+</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0.001s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="packages/com.snapolitano.exercises.oop.basic.html">com.snapolitano.exercises.oop.basic</a>
+</td>
+<td>26</td>
+<td>0</td>
+<td>0</td>
+<td>0.006s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="packages/com.snapolitano.exercises.oop.phonebook.html">com.snapolitano.exercises.oop.phonebook</a>
+</td>
+<td>10</td>
+<td>0</td>
+<td>0</td>
+<td>0.001s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="failures">
+<a href="packages/com.snapolitano.exercises.oop.shape.html">com.snapolitano.exercises.oop.shape</a>
+</td>
+<td>10</td>
+<td>2</td>
+<td>0</td>
+<td>0.002s</td>
+<td class="failures">80%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="packages/com.snapolitano.exercises.strings.html">com.snapolitano.exercises.strings</a>
+</td>
+<td>12</td>
+<td>0</td>
+<td>0</td>
+<td>0.007s</td>
 <td class="success">100%</td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="tab1" class="tab">
+<div id="tab2" class="tab">
 <h2>Classes</h2>
 <table>
 <thead>
@@ -107,12 +207,742 @@
 <tbody>
 <tr>
 <td class="success">
-<a href="classes/com.snapolitano.exercises.oop.shape.CircleTest.html">com.snapolitano.exercises.oop.shape.CircleTest</a>
+<a href="classes/com.snapolitano.exercises.arrays.BubbleSortTest.html">com.snapolitano.exercises.arrays.BubbleSortTest</a>
+</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0.006s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.arrays.CanBalanceTest.html">com.snapolitano.exercises.arrays.CanBalanceTest</a>
 </td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0.008s</td>
+<td>0.001s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.arrays.CopyArrayTest.html">com.snapolitano.exercises.arrays.CopyArrayTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.001s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.arrays.DeepCopyTest.html">com.snapolitano.exercises.arrays.DeepCopyTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.arrays.DivideArrayTest.html">com.snapolitano.exercises.arrays.DivideArrayTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.arrays.DivideArraysTest.html">com.snapolitano.exercises.arrays.DivideArraysTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.arrays.FibonacciTest.html">com.snapolitano.exercises.arrays.FibonacciTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.arrays.FillArrayTest.html">com.snapolitano.exercises.arrays.FillArrayTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.005s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.arrays.FizzBuzzTest.html">com.snapolitano.exercises.arrays.FizzBuzzTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.001s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.arrays.IsEverywhereTest.html">com.snapolitano.exercises.arrays.IsEverywhereTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.arrays.MatchUpTest.html">com.snapolitano.exercises.arrays.MatchUpTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.001s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.arrays.MoveZeroEndTest.html">com.snapolitano.exercises.arrays.MoveZeroEndTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.arrays.SearchArrayTest.html">com.snapolitano.exercises.arrays.SearchArrayTest</a>
+</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0.001s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.arrays.SplitterTest.html">com.snapolitano.exercises.arrays.SplitterTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.001s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.arrays.TenRunTest.html">com.snapolitano.exercises.arrays.TenRunTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.001s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.collections.DownSizeTest.html">com.snapolitano.exercises.collections.DownSizeTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.collections.EratosthenesTest.html">com.snapolitano.exercises.collections.EratosthenesTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.collections.IntersectionTest.html">com.snapolitano.exercises.collections.IntersectionTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.collections.InvertMapTest.html">com.snapolitano.exercises.collections.InvertMapTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.001s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.collections.MorseCodeTest.html">com.snapolitano.exercises.collections.MorseCodeTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.001s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.collections.RecurringCharsTest.html">com.snapolitano.exercises.collections.RecurringCharsTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.001s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.collections.RemoveDuplicatesTest.html">com.snapolitano.exercises.collections.RemoveDuplicatesTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.001s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.collections.ReverseTest.html">com.snapolitano.exercises.collections.ReverseTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.collections.SortAccountTest.html">com.snapolitano.exercises.collections.SortAccountTest</a>
+</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0.002s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="failures">
+<a href="classes/com.snapolitano.exercises.collections.SpeedTestTest.html">com.snapolitano.exercises.collections.SpeedTestTest</a>
+</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>0.010s</td>
+<td class="failures">50%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.collections.ValuesKeysTest.html">com.snapolitano.exercises.collections.ValuesKeysTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.collections.WordAfterWordTest.html">com.snapolitano.exercises.collections.WordAfterWordTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.365s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.functional.AllPalindromeTest.html">com.snapolitano.exercises.functional.AllPalindromeTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.002s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.functional.JustPrintTest.html">com.snapolitano.exercises.functional.JustPrintTest</a>
+</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0.004s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.functional.NoTeenTest.html">com.snapolitano.exercises.functional.NoTeenTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.functional.NoYYTest.html">com.snapolitano.exercises.functional.NoYYTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.001s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.functional.NoYYZTest.html">com.snapolitano.exercises.functional.NoYYZTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.001s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.functional.OneTenTest.html">com.snapolitano.exercises.functional.OneTenTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.001s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.functional.PayMoreTest.html">com.snapolitano.exercises.functional.PayMoreTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.001s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.functional.SquareFiveTest.html">com.snapolitano.exercises.functional.SquareFiveTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.001s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.functional.TwoTwoTest.html">com.snapolitano.exercises.functional.TwoTwoTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.generics.AppendBoundedTest.html">com.snapolitano.exercises.generics.AppendBoundedTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.generics.AppendTest.html">com.snapolitano.exercises.generics.AppendTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.generics.CountOccurrencesTest.html">com.snapolitano.exercises.generics.CountOccurrencesTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.001s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.generics.DivideTest.html">com.snapolitano.exercises.generics.DivideTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.001s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.generics.IterableToStringTest.html">com.snapolitano.exercises.generics.IterableToStringTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.generics.MapToPairsTest.html">com.snapolitano.exercises.generics.MapToPairsTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.generics.MeasureTest.html">com.snapolitano.exercises.generics.MeasureTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.001s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.generics.MinMaxTest.html">com.snapolitano.exercises.generics.MinMaxTest</a>
+</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.generics.PairSameTypeTest.html">com.snapolitano.exercises.generics.PairSameTypeTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.generics.PairTest.html">com.snapolitano.exercises.generics.PairTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.generics.PairUtilTest.html">com.snapolitano.exercises.generics.PairUtilTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.generics.ReverseTest.html">com.snapolitano.exercises.generics.ReverseTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.oop.bankaccount.BankAccountEasyTest.html">com.snapolitano.exercises.oop.bankaccount.BankAccountEasyTest</a>
+</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0.001s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.oop.bankaccount.BankAccountProTest.html">com.snapolitano.exercises.oop.bankaccount.BankAccountProTest</a>
+</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.oop.basic.BankAccountTest.html">com.snapolitano.exercises.oop.basic.BankAccountTest</a>
+</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0.001s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.oop.basic.CircleTest.html">com.snapolitano.exercises.oop.basic.CircleTest</a>
+</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0.001s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.oop.basic.ClickCounterTest.html">com.snapolitano.exercises.oop.basic.ClickCounterTest</a>
+</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.oop.basic.EnhancedArrayTest.html">com.snapolitano.exercises.oop.basic.EnhancedArrayTest</a>
+</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.oop.basic.EnhancedResizableArrayTest.html">com.snapolitano.exercises.oop.basic.EnhancedResizableArrayTest</a>
+</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0.001s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.oop.basic.LetterTest.html">com.snapolitano.exercises.oop.basic.LetterTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.001s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.oop.basic.PolygonTest.html">com.snapolitano.exercises.oop.basic.PolygonTest</a>
+</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0.002s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.oop.basic.RationalNumberTest.html">com.snapolitano.exercises.oop.basic.RationalNumberTest</a>
+</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.oop.phonebook.PhoneBookArrayTest.html">com.snapolitano.exercises.oop.phonebook.PhoneBookArrayTest</a>
+</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.oop.phonebook.PhoneBookListTest.html">com.snapolitano.exercises.oop.phonebook.PhoneBookListTest</a>
+</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0.001s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="failures">
+<a href="classes/com.snapolitano.exercises.oop.shape.CircleTest.html">com.snapolitano.exercises.oop.shape.CircleTest</a>
+</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>0.001s</td>
+<td class="failures">80%</td>
+</tr>
+<tr>
+<td class="failures">
+<a href="classes/com.snapolitano.exercises.oop.shape.RectangleTest.html">com.snapolitano.exercises.oop.shape.RectangleTest</a>
+</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>0.001s</td>
+<td class="failures">80%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.strings.ConcatenateTest.html">com.snapolitano.exercises.strings.ConcatenateTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.001s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.strings.CountYZTest.html">com.snapolitano.exercises.strings.CountYZTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.001s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.strings.DuplicateCharsTest.html">com.snapolitano.exercises.strings.DuplicateCharsTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.strings.EqualIsNotTest.html">com.snapolitano.exercises.strings.EqualIsNotTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.001s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.strings.GoodAroundTheBeginningTest.html">com.snapolitano.exercises.strings.GoodAroundTheBeginningTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.strings.GoodAtTheBeginningTest.html">com.snapolitano.exercises.strings.GoodAtTheBeginningTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.001s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.strings.PalindromeTest.html">com.snapolitano.exercises.strings.PalindromeTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.strings.RemoveFirstLastTest.html">com.snapolitano.exercises.strings.RemoveFirstLastTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.001s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.strings.RemoveFirstTwoCharTest.html">com.snapolitano.exercises.strings.RemoveFirstTwoCharTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.strings.RemoveFirstTwoCharsIfTest.html">com.snapolitano.exercises.strings.RemoveFirstTwoCharsIfTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.001s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.strings.ReverseTest.html">com.snapolitano.exercises.strings.ReverseTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.snapolitano.exercises.strings.SumDigitsTest.html">com.snapolitano.exercises.strings.SumDigitsTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.001s</td>
 <td class="success">100%</td>
 </tr>
 </tbody>
@@ -126,7 +956,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.5.1</a> at 19 apr 2023, 18:09:03</p>
+<a href="http://www.gradle.org">Gradle 7.5.1</a> at 21 apr 2023, 16:38:09</p>
 </div>
 </div>
 </body>
