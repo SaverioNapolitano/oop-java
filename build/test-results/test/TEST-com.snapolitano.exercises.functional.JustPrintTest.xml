@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.snapolitano.exercises.functional.JustPrintTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-04-21T14:38:09" hostname="wifi-125-dhcprange-125-247.wifi.unimo.it" time="0.005">
+  <properties/>
+  <testcase name="justPrintMap()" classname="com.snapolitano.exercises.functional.JustPrintTest" time="0.003"/>
+  <testcase name="justPrintList()" classname="com.snapolitano.exercises.functional.JustPrintTest" time="0.001"/>
+  <system-out><![CDATA[k:2, v:agata
+k:3, v:darma
+k:4, v:marzia
+k:1, v:nicola
+Hello Marco!
+Hello Matteo!
+Hello Luca!
+Hello Giovanni!
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

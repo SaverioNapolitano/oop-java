@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.snapolitano.exercises.collections.SortAccountTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-04-21T14:38:09" hostname="wifi-125-dhcprange-125-247.wifi.unimo.it" time="0.002">
+  <properties/>
+  <testcase name="sortByInterestRate()" classname="com.snapolitano.exercises.collections.SortAccountTest" time="0.001"/>
+  <testcase name="sortByDuePayment()" classname="com.snapolitano.exercises.collections.SortAccountTest" time="0.0"/>
+  <testcase name="sortByAmount()" classname="com.snapolitano.exercises.collections.SortAccountTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

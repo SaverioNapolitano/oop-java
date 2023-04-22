@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.snapolitano.exercises.oop.basic.CircleTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-04-21T14:38:09" hostname="wifi-125-dhcprange-125-247.wifi.unimo.it" time="0.001">
+  <properties/>
+  <testcase name="contains()" classname="com.snapolitano.exercises.oop.basic.CircleTest" time="0.0"/>
+  <testcase name="getArea()" classname="com.snapolitano.exercises.oop.basic.CircleTest" time="0.0"/>
+  <testcase name="getPerimeter()" classname="com.snapolitano.exercises.oop.basic.CircleTest" time="0.0"/>
+  <testcase name="translate()" classname="com.snapolitano.exercises.oop.basic.CircleTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
