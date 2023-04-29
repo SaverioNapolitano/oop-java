@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.snapolitano.exercises.collections.WordFrequencyTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-04-29T09:25:01" hostname="LGwebOSTV.station" time="40.358">
+  <properties/>
+  <testcase name="wordFrequency()" classname="com.snapolitano.exercises.collections.WordFrequencyTest" time="40.358"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
