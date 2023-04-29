@@ -14,7 +14,7 @@ public class WordFrequency {
         return Arrays.asList(line.replaceAll("[^a-zA-Z ]", "").toLowerCase().split("\\s+"));
     }
 
-    public static int howMany(List<String> list, String string){
+    public static int howMany(List<String> list, String string) {
         int count = 0;
         for (String s : list) {
             if (s.contentEquals(string)) {
@@ -23,6 +23,7 @@ public class WordFrequency {
         }
         return count;
     }
+
     public static Map<String, Integer> wordFrequency(String filename) throws IOException {
         List<String> words = lineToWords(getLines(filename).toString());
         Set<String> set = new HashSet<>(words);
@@ -31,6 +32,5 @@ public class WordFrequency {
             map.put(s, howMany(words, s));
         }
         return map;
-
     }
 }
