@@ -11,14 +11,7 @@ class PayOnAverageTest {
 
     @Test
     void payOnAverage() {
-        Map<String, Double> fees = new HashMap<>(Map.of(
-                "3474565432", 11.75,
-                "3336534965", 9.95,
-                "3315467927", 9.75,
-                "3316393736", 8.75));
-        assertEquals(Map.of(
-                "331", 9.25,
-                "333", 9.95,
-                "347", 11.75), PayOnAverage.payOnAverage(fees));
+        Map<String, Double> fees = new HashMap<>(Map.of("3474565432", 11.75, "3336534965", 9.95, "3315467927", 9.75, "3316393736", 8.75));
+        assertEquals(Map.of("331", 9.25, "333", 9.95, "347", 11.75), PayOnAverage.payOnAverage(fees));
     }
 }
