@@ -1,6 +1,5 @@
 package com.snapolitano.exercises.oop.phonebook;
 
-//TODO: use exceptions
 public class PhoneBookArray implements PhoneBook {
     static final int MAX_PERSONS = 256;
     Person[] phoneBook;

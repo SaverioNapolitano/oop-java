@@ -17,8 +17,18 @@ public class AbstractShape implements Computable, Movable, Resizable {
     }
 
     public void setColor(String color) {
-        //TODO: RGB check
-        this.color = color;
+        if(color.length() == 7){
+            this.color = color;
+            if (color.startsWith("#")) {
+                try {
+                    Integer.parseInt(color.substring(1), 16);
+                    return;
+                } catch (NumberFormatException ignored) {
+
+                }
+            }
+        }
+        throw new IllegalArgumentException();
     }
 
     public String getId() {

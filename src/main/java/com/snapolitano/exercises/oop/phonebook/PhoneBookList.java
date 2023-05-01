@@ -2,7 +2,6 @@ package com.snapolitano.exercises.oop.phonebook;
 
 import java.util.ArrayList;
 
-//TODO: use exceptions
 public class PhoneBookList implements PhoneBook {
 
     public static final int MAX_PERSONS = 256;
