@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.snapolitano.exercises.oop.shape.RectangleTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-05-01T12:10:23" hostname="LGwebOSTV.station" time="0.014">
+  <properties/>
+  <testcase name="resize()" classname="com.snapolitano.exercises.oop.shape.RectangleTest" time="0.009"/>
+  <testcase name="getArea()" classname="com.snapolitano.exercises.oop.shape.RectangleTest" time="0.001"/>
+  <testcase name="move()" classname="com.snapolitano.exercises.oop.shape.RectangleTest" time="0.0"/>
+  <testcase name="getPerimeter()" classname="com.snapolitano.exercises.oop.shape.RectangleTest" time="0.0"/>
+  <testcase name="setColor()" classname="com.snapolitano.exercises.oop.shape.RectangleTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
