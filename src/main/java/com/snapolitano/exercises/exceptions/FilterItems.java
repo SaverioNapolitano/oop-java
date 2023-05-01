@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FilterItems {
-    public static List<String> filterItems(List<String> strings){
+    public static List<String> filterItems(List<String> strings) {
         List<String> list = new ArrayList<>();
         for (String s : strings) {
             try {

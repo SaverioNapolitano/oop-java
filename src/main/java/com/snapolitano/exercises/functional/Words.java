@@ -18,6 +18,7 @@ public class Words {
     public static long howManyLines(String filename, String subString) throws IOException {
         return getLines(filename).stream().filter(s -> s.contains(subString)).count();
     }
+
     public static long howManyTimes(String filename, String word) throws IOException {
         return lineToWords(getLines(filename).toString()).stream().filter(s -> s.contentEquals(word)).count();
     }

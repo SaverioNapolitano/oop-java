@@ -13,16 +13,16 @@ public class RetryWrite {
 
     public static void writeWithTries(int maxTries) {
         boolean valid = false;
-        for(int i = 0; i < maxTries; i++){
-            try{
+        for (int i = 0; i < maxTries; i++) {
+            try {
                 write("Message");
                 valid = true;
                 break;
-            } catch (IOException ignored){
+            } catch (IOException ignored) {
 
             }
         }
-        if(!valid){
+        if (!valid) {
             throw new RuntimeException();
         }
     }

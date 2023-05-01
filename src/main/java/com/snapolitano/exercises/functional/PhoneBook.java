@@ -6,6 +6,7 @@ import java.util.Optional;
 
 public class PhoneBook {
     List<Person> people;
+
     public static class Person {
         String name;
         String lastname;
@@ -61,10 +62,11 @@ public class PhoneBook {
         this.people = people;
     }
 
-    public Optional<Person> searchByLastname(String lastname){
+    public Optional<Person> searchByLastname(String lastname) {
         return people.stream().filter(person -> person.lastname.contentEquals(lastname)).findFirst();
     }
-    public Optional<Person> searchByNameAndLastname(String name, String lastname){
-        return  people.stream().filter(person -> person.name.contentEquals(name) && person.lastname.contentEquals(lastname)).findFirst();
+
+    public Optional<Person> searchByNameAndLastname(String name, String lastname) {
+        return people.stream().filter(person -> person.name.contentEquals(name) && person.lastname.contentEquals(lastname)).findFirst();
     }
 }

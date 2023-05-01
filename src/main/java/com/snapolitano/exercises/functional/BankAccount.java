@@ -28,13 +28,12 @@ public class BankAccount {
             return duePayment;
         }
 
-        public void applyInterest(){
-            this.amount+=this.getAmount()*this.getInterestRate();
+        public void applyInterest() {
+            this.amount += this.getAmount() * this.getInterestRate();
         }
     }
-    public static List<Account> applyInterest(List<Account> accounts){
-        return accounts.stream()
-                .filter(account -> account.getDuePayment().isBefore(LocalDateTime.now()))
-                .peek(Account::applyInterest).sorted(((o1, o2) -> Double.compare(o2.getAmount(), o1.getAmount()))).collect(Collectors.toList());
+
+    public static List<Account> applyInterest(List<Account> accounts) {
+        return accounts.stream().filter(account -> account.getDuePayment().isBefore(LocalDateTime.now())).peek(Account::applyInterest).sorted(((o1, o2) -> Double.compare(o2.getAmount(), o1.getAmount()))).collect(Collectors.toList());
     }
 }
