@@ -2,7 +2,6 @@ package com.snapolitano.exercises.collections;
 
 import java.util.ArrayDeque;
 import java.util.List;
-import java.util.ListIterator;
 
 public class Reverse {
     public static List<String> reverse(List<String> sentence) {

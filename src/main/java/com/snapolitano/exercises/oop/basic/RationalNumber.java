@@ -31,8 +31,8 @@ public class RationalNumber {
     }
 
     @Override
-    public String toString() {
-        return "RationalNumber{" + "denominator=" + denominator + ", numerator=" + numerator + '}';
+    public int hashCode() {
+        return Objects.hash(denominator, numerator);
     }
 
     @Override
@@ -46,7 +46,7 @@ public class RationalNumber {
     }
 
     @Override
-    public int hashCode() {
-        return Objects.hash(denominator, numerator);
+    public String toString() {
+        return "RationalNumber{" + "denominator=" + denominator + ", numerator=" + numerator + '}';
     }
 }

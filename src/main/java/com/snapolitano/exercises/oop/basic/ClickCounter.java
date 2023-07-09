@@ -3,6 +3,10 @@ package com.snapolitano.exercises.oop.basic;
 public class ClickCounter {
     int value;
 
+    public ClickCounter() {
+        value = getValue();
+    }
+
     public int getValue() {
         return value;
     }
@@ -17,9 +21,5 @@ public class ClickCounter {
 
     public void reset() {
         value = 0;
-    }
-
-    public ClickCounter() {
-        value = getValue();
     }
 }

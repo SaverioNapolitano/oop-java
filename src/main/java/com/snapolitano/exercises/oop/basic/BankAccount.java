@@ -1,7 +1,5 @@
 package com.snapolitano.exercises.oop.basic;
 
-import java.util.Objects;
-
 public class BankAccount {
     double balance;
 
