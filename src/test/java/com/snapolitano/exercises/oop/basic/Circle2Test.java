@@ -28,7 +28,6 @@ class Circle2Test {
 
     @Test
     void contains(){
-        Circle2 circle21 = new Circle2(new Point(0, 0), 1);
         assertFalse(circle2.contains(new Point(100, -100)));
     }
 }

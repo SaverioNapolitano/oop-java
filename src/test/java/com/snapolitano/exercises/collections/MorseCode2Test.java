@@ -8,8 +8,8 @@ class MorseCode2Test {
 
     @Test
     void morseCode() {
-        assertEquals(".... . ._.. ._.. ___", MorseCode.morseCode("hello"));
-        assertEquals(".__ ___ ._. ._.. _..", MorseCode.morseCode("world"));
-        assertThrows(IllegalArgumentException.class, () -> MorseCode.morseCode("w0rld"));
+        assertEquals(".... . ._.. ._.. ___", MorseCode2.morseCode("hello"));
+        assertEquals(".__ ___ ._. ._.. _..", MorseCode2.morseCode("world"));
+        assertThrows(IllegalArgumentException.class, () -> MorseCode2.morseCode("w0rld"));
     }
 }

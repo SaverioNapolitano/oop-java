@@ -40,11 +40,11 @@ public class MorseCode2 {
         Map<Character, String> map = conversionTable();
         for (int i = 0; i < string.length(); i++) {
             if (map.containsKey(string.charAt(i))) {
-                stringBuilder.append(map.get(string.charAt(i)));
+                stringBuilder.append(map.get(string.charAt(i))).append(" ");
             } else {
                 throw new IllegalArgumentException("Character not supported");
             }
         }
-        return stringBuilder.toString();
+        return stringBuilder.deleteCharAt(stringBuilder.length() - 1).toString();
     }
 }
