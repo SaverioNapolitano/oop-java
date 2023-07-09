@@ -20,7 +20,7 @@ public class Words2 {
 
     }
     public static long howManyTimes(String filename, String word) throws IOException {
-        return getLines(filename).stream().map(Words2::lineToWords).filter(list -> list.contains(word)).count();
+        return lineToWords(getLines(filename).toString()).stream().filter(s -> s.equals(word)).count();
 
     }
 }

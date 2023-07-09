@@ -18,4 +18,4 @@ Exercises whose names end in 2 are remakes of the exercises made in preparation 
 
 ## Test
 
-In the **test** package can be found the test file used to validate the solutions.
+In the **test** package can be found the test files used to validate the solutions.
