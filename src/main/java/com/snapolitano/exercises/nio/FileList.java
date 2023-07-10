@@ -11,7 +11,7 @@ public class FileList {
 
 	public static Set<String> fileList(String src) throws IOException {
 		try(Stream<Path> stream = Files.walk(Path.of(src))){
-			return stream.filter(Files::isRegularFile).map(Path::toString).collect(Collectors.toSet());
+			return stream.filter(Files::isRegularFile).map(Path::getFileName).map(Path::toString).collect(Collectors.toSet());
 		}
 	}
 }

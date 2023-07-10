@@ -14,8 +14,7 @@ class FileListTest {
 	@Test
 	void fileList() {
 		try {
-			assertEquals(Set.of("src/main/resources/filelisttest/file.txt", "src/main/resources/filelisttest/subfolder" +
-					"/file1.txt"), FileList.fileList(src));
+			assertEquals(Set.of("file.txt", "file1.txt"), FileList.fileList(src));
 		} catch (IOException e) {
 			throw new RuntimeException(e);
 		}

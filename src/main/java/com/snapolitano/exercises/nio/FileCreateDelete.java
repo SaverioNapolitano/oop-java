@@ -9,6 +9,6 @@ public class FileCreateDelete {
 		Files.createFile(Path.of(src));
 	}
 	public static void deleteFile(String src) throws IOException{
-		Files.delete(Path.of(src));
+		Files.deleteIfExists(Path.of(src));
 	}
 }
