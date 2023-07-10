@@ -14,7 +14,7 @@ public interface PhoneBook {
 
 	Person searchByNumber(String phone);
 
-	public class Person {
+	class Person {
 		String lastname;
 		String name;
 		String phone;

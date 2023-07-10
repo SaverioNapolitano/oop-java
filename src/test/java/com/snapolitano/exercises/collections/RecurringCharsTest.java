@@ -12,7 +12,7 @@ class RecurringCharsTest {
 	@Test
 	void recurringChars() {
 		assertEquals(new HashSet<Character>(), RecurringChars.recurringChars("Ciao"));
-		assertEquals(new HashSet<Character>(Set.of('l')), RecurringChars.recurringChars("Hello"));
-		assertEquals(new HashSet<Character>(Set.of('l', 'o')), RecurringChars.recurringChars("Hello World!"));
+		assertEquals(new HashSet<>(Set.of('l')), RecurringChars.recurringChars("Hello"));
+		assertEquals(new HashSet<>(Set.of('l', 'o')), RecurringChars.recurringChars("Hello World!"));
 	}
 }

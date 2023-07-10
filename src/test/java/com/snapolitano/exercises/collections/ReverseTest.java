@@ -11,7 +11,7 @@ class ReverseTest {
 
 	@Test
 	void reverse() {
-		assertEquals(new ArrayList<String>(List.of("World!", "Hello")), Reverse.reverse(new ArrayList<String>(List.of("Hello", "World!"))));
-		assertEquals(new ArrayList<String>(List.of("am", "I")), Reverse.reverse(new ArrayList<String>(List.of("I", "am"))));
+		assertEquals(new ArrayList<>(List.of("World!", "Hello")), Reverse.reverse(new ArrayList<>(List.of("Hello", "World!"))));
+		assertEquals(new ArrayList<>(List.of("am", "I")), Reverse.reverse(new ArrayList<>(List.of("I", "am"))));
 	}
 }
