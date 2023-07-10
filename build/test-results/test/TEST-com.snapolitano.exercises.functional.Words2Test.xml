@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.snapolitano.exercises.functional.Words2Test" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-07-09T22:05:51" hostname="MBP-di-Saverio.station" time="0.254">
-  <properties/>
-  <testcase name="howManyLines()" classname="com.snapolitano.exercises.functional.Words2Test" time="0.048"/>
-  <testcase name="howManyTimes()" classname="com.snapolitano.exercises.functional.Words2Test" time="0.205"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

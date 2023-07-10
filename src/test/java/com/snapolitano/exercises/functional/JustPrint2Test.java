@@ -7,13 +7,13 @@ import java.util.Map;
 
 class JustPrint2Test {
 
-    @Test
-    void justPrintList() {
-        JustPrint2.justPrintList(List.of("Marco", "Matteo", "Luca", "Giovanni"));
-    }
+	@Test
+	void justPrintList() {
+		JustPrint2.justPrintList(List.of("Marco", "Matteo", "Luca", "Giovanni"));
+	}
 
-    @Test
-    void justPrintMap() {
-        JustPrint2.justPrintMap(Map.of(1, "nicola", 2, "agata", 3, "darma", 4, "marzia"));
-    }
+	@Test
+	void justPrintMap() {
+		JustPrint2.justPrintMap(Map.of(1, "nicola", 2, "agata", 3, "darma", 4, "marzia"));
+	}
 }

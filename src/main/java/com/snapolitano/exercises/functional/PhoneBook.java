@@ -5,68 +5,68 @@ import java.util.Objects;
 import java.util.Optional;
 
 public class PhoneBook {
-    List<Person> people;
+	List<Person> people;
 
-    public static class Person {
-        String name;
-        String lastname;
-        String phone;
+	public PhoneBook(List<Person> people) {
+		this.people = people;
+	}
 
-        public Person(String name, String lastname, String phone) {
-            this.name = name;
-            this.lastname = lastname;
-            this.phone = phone;
-        }
+	public Optional<Person> searchByLastname(String lastname) {
+		return people.stream().filter(person -> person.lastname.contentEquals(lastname)).findFirst();
+	}
 
-        public String getName() {
-            return name;
-        }
+	public Optional<Person> searchByNameAndLastname(String name, String lastname) {
+		return people.stream().filter(person -> person.name.contentEquals(name) && person.lastname.contentEquals(lastname)).findFirst();
+	}
 
-        public void setName(String name) {
-            this.name = name;
-        }
+	public static class Person {
+		String name;
+		String lastname;
+		String phone;
 
-        public String getLastname() {
-            return lastname;
-        }
+		public Person(String name, String lastname, String phone) {
+			this.name = name;
+			this.lastname = lastname;
+			this.phone = phone;
+		}
 
-        public void setLastname(String lastname) {
-            this.lastname = lastname;
-        }
+		public String getName() {
+			return name;
+		}
 
-        public String getPhone() {
-            return phone;
-        }
+		public void setName(String name) {
+			this.name = name;
+		}
 
-        public void setPhone(String phone) {
-            this.phone = phone;
-        }
+		public String getLastname() {
+			return lastname;
+		}
 
-        @Override
-        public boolean equals(Object o) {
-            if (this == o)
-                return true;
-            if (o == null || getClass() != o.getClass())
-                return false;
-            Person person = (Person) o;
-            return Objects.equals(name, person.name) && Objects.equals(lastname, person.lastname) && Objects.equals(phone, person.phone);
-        }
+		public void setLastname(String lastname) {
+			this.lastname = lastname;
+		}
 
-        @Override
-        public int hashCode() {
-            return Objects.hash(name, lastname, phone);
-        }
-    }
+		public String getPhone() {
+			return phone;
+		}
 
-    public PhoneBook(List<Person> people) {
-        this.people = people;
-    }
+		public void setPhone(String phone) {
+			this.phone = phone;
+		}
 
-    public Optional<Person> searchByLastname(String lastname) {
-        return people.stream().filter(person -> person.lastname.contentEquals(lastname)).findFirst();
-    }
+		@Override
+		public int hashCode() {
+			return Objects.hash(name, lastname, phone);
+		}
 
-    public Optional<Person> searchByNameAndLastname(String name, String lastname) {
-        return people.stream().filter(person -> person.name.contentEquals(name) && person.lastname.contentEquals(lastname)).findFirst();
-    }
+		@Override
+		public boolean equals(Object o) {
+			if (this == o)
+				return true;
+			if (o == null || getClass() != o.getClass())
+				return false;
+			Person person = (Person) o;
+			return Objects.equals(name, person.name) && Objects.equals(lastname, person.lastname) && Objects.equals(phone, person.phone);
+		}
+	}
 }

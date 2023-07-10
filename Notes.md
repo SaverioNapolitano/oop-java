@@ -2,13 +2,15 @@
 
 ## Errors / 1K SLOC
 
-Cleanroom development techniques are usually not implemented because its cost would exceed the benefits derived from the reduction of the error ratio.
+Cleanroom development techniques are usually not implemented because its cost would exceed the benefits derived from the
+reduction of the error ratio.
 
 # E9 - Java Multi-threading
 
 ## Thread states
 
-Waiting: the thread which called object.wait() and waits for another thread to call object.notify() or object.notifyAll().
+Waiting: the thread which called object.wait() and waits for another thread to call object.notify() or
+object.notifyAll().
 
 Blocking: A thread waiting for a resource such as waiting for the completion of I/O operations or for an object's lock.
 

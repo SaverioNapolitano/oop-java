@@ -5,13 +5,13 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class RemoveDuplicatesTest {
 
-    @Test
-    void removeDuplicates() {
-        assertEquals(new ArrayList<>(List.of(1, 2, 3, 4, 5)), RemoveDuplicates.removeDuplicates(new ArrayList<>(List.of(1, 2, 3, 4, 5))));
-        assertEquals(new ArrayList<>(List.of(1, 2)), RemoveDuplicates.removeDuplicates(new ArrayList<>(List.of(1, 1, 1, 2, 2))));
-    }
+	@Test
+	void removeDuplicates() {
+		assertEquals(new ArrayList<>(List.of(1, 2, 3, 4, 5)), RemoveDuplicates.removeDuplicates(new ArrayList<>(List.of(1, 2, 3, 4, 5))));
+		assertEquals(new ArrayList<>(List.of(1, 2)), RemoveDuplicates.removeDuplicates(new ArrayList<>(List.of(1, 1, 1, 2, 2))));
+	}
 }

@@ -2,9 +2,10 @@
 
 Some exercises in Java for the object-oriented programming exam.
 
->This repo is based on [java-core](https://github.com/nbicocchi/java-core.git).
+> This repo is based on [java-core](https://github.com/nbicocchi/java-core.git).
 
 ## Table of contents
+
 * [exercises](#exercises)
 * [test](#test)
 

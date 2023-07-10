@@ -1,82 +1,84 @@
 package com.snapolitano.exercises.collections;
 
 import java.time.LocalDateTime;
-import java.util.*;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Objects;
 
 public class SortAccount {
-    public static class Account {
-        double amount;
-        double interestRate;
-        LocalDateTime duePayment;
+	public static void sortByAmount(List<Account> accounts) {
+		accounts.sort((o1, o2) -> {
+			Double d1 = o1.getAmount();
+			Double d2 = o2.getAmount();
+			return d1.compareTo(d2);
+		});
+	}
 
-        public Account(double amount, double interestRate, LocalDateTime duePayment) {
-            this.amount = amount;
-            this.interestRate = interestRate;
-            this.duePayment = duePayment;
-        }
+	public static void sortByInterestRate(List<Account> accounts) {
+		accounts.sort((o1, o2) -> {
+			Double d1 = o1.getInterestRate();
+			Double d2 = o2.getInterestRate();
+			return d1.compareTo(d2);
+		});
+	}
 
-        public double getAmount() {
-            return amount;
-        }
+	public static void sortByDuePayment(List<Account> accounts) {
+		accounts.sort(Comparator.comparing(Account::getDuePayment));
+	}
 
-        public void setAmount(double amount) {
-            this.amount = amount;
-        }
+	public static class Account {
+		double amount;
+		double interestRate;
+		LocalDateTime duePayment;
 
-        public double getInterestRate() {
-            return interestRate;
-        }
+		public Account(double amount, double interestRate, LocalDateTime duePayment) {
+			this.amount = amount;
+			this.interestRate = interestRate;
+			this.duePayment = duePayment;
+		}
 
-        public void setInterestRate(double interestRate) {
-            this.interestRate = interestRate;
-        }
+		public double getAmount() {
+			return amount;
+		}
 
-        public LocalDateTime getDuePayment() {
-            return duePayment;
-        }
+		public void setAmount(double amount) {
+			this.amount = amount;
+		}
 
-        public void setDuePayment(LocalDateTime duePayment) {
-            this.duePayment = duePayment;
-        }
+		public double getInterestRate() {
+			return interestRate;
+		}
 
-        @Override
-        public boolean equals(Object o) {
-            if (this == o)
-                return true;
-            if (o == null || getClass() != o.getClass())
-                return false;
-            Account account = (Account) o;
-            return Double.compare(account.amount, amount) == 0 && Double.compare(account.interestRate, interestRate) == 0 && duePayment.equals(account.duePayment);
-        }
+		public void setInterestRate(double interestRate) {
+			this.interestRate = interestRate;
+		}
 
-        @Override
-        public int hashCode() {
-            return Objects.hash(amount, interestRate, duePayment);
-        }
+		public LocalDateTime getDuePayment() {
+			return duePayment;
+		}
 
-        @Override
-        public String toString() {
-            return "Account{" + "amount=" + amount + ", interestRate=" + interestRate + ", duePayment=" + duePayment + '}';
-        }
-    }
+		public void setDuePayment(LocalDateTime duePayment) {
+			this.duePayment = duePayment;
+		}
 
-    public static void sortByAmount(List<Account> accounts) {
-        accounts.sort((o1, o2) -> {
-            Double d1 = o1.getAmount();
-            Double d2 = o2.getAmount();
-            return d1.compareTo(d2);
-        });
-    }
+		@Override
+		public int hashCode() {
+			return Objects.hash(amount, interestRate, duePayment);
+		}
 
-    public static void sortByInterestRate(List<Account> accounts) {
-        accounts.sort((o1, o2) -> {
-            Double d1 = o1.getInterestRate();
-            Double d2 = o2.getInterestRate();
-            return d1.compareTo(d2);
-        });
-    }
+		@Override
+		public boolean equals(Object o) {
+			if (this == o)
+				return true;
+			if (o == null || getClass() != o.getClass())
+				return false;
+			Account account = (Account) o;
+			return Double.compare(account.amount, amount) == 0 && Double.compare(account.interestRate, interestRate) == 0 && duePayment.equals(account.duePayment);
+		}
 
-    public static void sortByDuePayment(List<Account> accounts) {
-        accounts.sort(Comparator.comparing(Account::getDuePayment));
-    }
+		@Override
+		public String toString() {
+			return "Account{" + "amount=" + amount + ", interestRate=" + interestRate + ", duePayment=" + duePayment + '}';
+		}
+	}
 }

@@ -4,18 +4,19 @@ import org.junit.jupiter.api.Test;
 
 import java.text.ParseException;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class CheckStringTest {
 
-    @Test
-    void checkString() {
-        assertThrows(ParseException.class, () -> CheckString.checkString("1q2w3e4r5t"));
-        assertThrows(ParseException.class, () -> CheckString.checkString("aab3h4z1r4"));
-        assertThrows(ParseException.class, () -> CheckString.checkString("a0b3h4z1rr"));
-        assertThrows(ParseException.class, () -> CheckString.checkString("a"));
-        assertThrows(ParseException.class, () -> CheckString.checkString("0"));
-        assertDoesNotThrow(() -> CheckString.checkString("a0b3h4z1r4"));
-        assertDoesNotThrow(() -> CheckString.checkString("a0"));
-    }
+	@Test
+	void checkString() {
+		assertThrows(ParseException.class, () -> CheckString.checkString("1q2w3e4r5t"));
+		assertThrows(ParseException.class, () -> CheckString.checkString("aab3h4z1r4"));
+		assertThrows(ParseException.class, () -> CheckString.checkString("a0b3h4z1rr"));
+		assertThrows(ParseException.class, () -> CheckString.checkString("a"));
+		assertThrows(ParseException.class, () -> CheckString.checkString("0"));
+		assertDoesNotThrow(() -> CheckString.checkString("a0b3h4z1r4"));
+		assertDoesNotThrow(() -> CheckString.checkString("a0"));
+	}
 }

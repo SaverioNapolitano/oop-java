@@ -3,64 +3,67 @@ package com.snapolitano.exercises.oop.phonebook;
 import java.util.Objects;
 
 public interface PhoneBook2 {
-        class Person{
-            String lastname;
-            String name;
-            String phone;
+	boolean addPerson(Person person);
 
-            public Person(String lastname, String name, String phone) {
-                this.lastname = lastname;
-                this.name = name;
-                this.phone = phone;
-            }
+	boolean removePerson(Person person);
 
-            public String getLastname() {
-                return lastname;
-            }
+	Person[] searchByLastname(String lastname);
 
-            public void setLastname(String lastname) {
-                this.lastname = lastname;
-            }
+	Person[] searchByNameAndLastname(String name, String lastname);
 
-            public String getName() {
-                return name;
-            }
+	class Person {
+		String lastname;
+		String name;
+		String phone;
 
-            public void setName(String name) {
-                this.name = name;
-            }
+		public Person(String lastname, String name, String phone) {
+			this.lastname = lastname;
+			this.name = name;
+			this.phone = phone;
+		}
 
-            public String getPhone() {
-                return phone;
-            }
+		public String getLastname() {
+			return lastname;
+		}
 
-            public void setPhone(String phone) {
-                this.phone = phone;
-            }
+		public void setLastname(String lastname) {
+			this.lastname = lastname;
+		}
 
-            @Override
-            public boolean equals(Object o) {
-                if (this == o)
-                    return true;
-                if (o == null || getClass() != o.getClass())
-                    return false;
-                Person person = (Person) o;
-                return Objects.equals(lastname, person.lastname) && Objects.equals(name, person.name) && Objects.equals(phone, person.phone);
-            }
+		public String getName() {
+			return name;
+		}
 
-            @Override
-            public int hashCode() {
-                return Objects.hash(lastname, name, phone);
-            }
+		public void setName(String name) {
+			this.name = name;
+		}
 
-            @Override
-            public String toString() {
-                return "Person{" + "lastname='" + lastname + '\'' + ", name='" + name + '\'' + ", phone='" + phone + '\'' + '}';
-            }
-        }
+		public String getPhone() {
+			return phone;
+		}
 
-        boolean addPerson(Person person);
-        boolean removePerson(Person person);
-        Person[] searchByLastname(String lastname);
-        Person[] searchByNameAndLastname(String name, String lastname);
+		public void setPhone(String phone) {
+			this.phone = phone;
+		}
+
+		@Override
+		public int hashCode() {
+			return Objects.hash(lastname, name, phone);
+		}
+
+		@Override
+		public boolean equals(Object o) {
+			if (this == o)
+				return true;
+			if (o == null || getClass() != o.getClass())
+				return false;
+			Person person = (Person) o;
+			return Objects.equals(lastname, person.lastname) && Objects.equals(name, person.name) && Objects.equals(phone, person.phone);
+		}
+
+		@Override
+		public String toString() {
+			return "Person{" + "lastname='" + lastname + '\'' + ", name='" + name + '\'' + ", phone='" + phone + '\'' + '}';
+		}
+	}
 }

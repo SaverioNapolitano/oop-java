@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.List;
 
 public class RemoveDuplicates2 {
-    public static List<Integer> removeDuplicates(List<Integer> list){
-        return new ArrayList<>(new HashSet<>(list));
-    }
+	public static List<Integer> removeDuplicates(List<Integer> list) {
+		return new ArrayList<>(new HashSet<>(list));
+	}
 }

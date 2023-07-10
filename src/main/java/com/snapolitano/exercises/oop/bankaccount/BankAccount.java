@@ -2,27 +2,27 @@ package com.snapolitano.exercises.oop.bankaccount;
 
 public interface BankAccount {
 
-    void addInterest();
+	void addInterest();
 
-    void deposit(double amount);
+	void deposit(double amount);
 
-    double getBalance();
+	double getBalance();
 
-    String getIBAN();
+	void setBalance(double balance);
 
-    double getInterestRate();
+	String getIBAN();
 
-    double getOperationFee();
+	void setIBAN(String IBAN);
 
-    void setBalance(double balance);
+	double getInterestRate();
 
-    void setIBAN(String IBAN);
+	void setInterestRate(double interestRate);
 
-    void setInterestRate(double interestRate);
+	double getOperationFee();
 
-    void setOperationFee(double operationFee);
+	void setOperationFee(double operationFee);
 
-    double transfer(BankAccount other, double amount);
+	double transfer(BankAccount other, double amount);
 
-    double withdraw(double amount);
+	double withdraw(double amount);
 }
